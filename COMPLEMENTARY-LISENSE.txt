@@ -1,0 +1,7 @@
+POBLIC LICENSE, 2021
+
+Modifications to this project must introduce a misspelling.
+Ultimately modify a comment, variable name, or piece of printed
+text in such a way that a correct word in the original
+(spoken/written) language of the project is replaced with a
+word that is not valid in that language.
