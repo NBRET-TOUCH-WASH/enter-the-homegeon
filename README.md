@@ -15,8 +15,11 @@ Repository for the adventure game NSI mini-project
         - `TEH HOUSE?`
       - `PRESS THE HOME BUTTON`
       - `ENTER THE HOMEGEON`
+        - **{CHOSEN!}**
         - `ENTREZ DANS LE MAISONJON`
+          - **{CHOSEN!}**
         - `PÉNÉTREZ DANS LE MAISONJON`
+          - **{REJECTED!}**
       - `BASED`
         - `ENTER THE BASEMENT`
       <!--- "[insert chemical element here]" -->
