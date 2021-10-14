@@ -1,4 +1,4 @@
-# AdventureGame
+# AdventureGame ; "Enter the HomeGeon"
 Repository for the adventure game NSI mini-project
 
 &nbsp;
