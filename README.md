@@ -28,6 +28,9 @@ Repository for the adventure game NSI mini-project
       - [ART]
         - ASCII?
           - **{TO BE ADDED LATER ; NOT TOO IMPORTANT FOR NOW}**
+      - [MUSIC]
+        - Giygas Theme
+          - **{YES.}**
     - [TEXT ENGINE]
     - [INPUT SYSTEM]
     - [MOVEMENT SYSTEM]
