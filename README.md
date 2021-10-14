@@ -27,6 +27,7 @@ Repository for the adventure game NSI mini-project
     - [IDEAS]
       - [ART]
         - ASCII?
+          - **{TO BE ADDED LATER ; NOT TOO IMPORTANT FOR NOW}**
     - [TEXT ENGINE]
     - [INPUT SYSTEM]
     - [MOVEMENT SYSTEM]
