@@ -5,7 +5,7 @@ Repository for the adventure game NSI mini-project
 
 ---
 
-## ROADMAP:
+## ROADMAP/STUFF LIST lmao:
 &nbsp;
 
 - Adventure Game
@@ -17,6 +17,8 @@ Repository for the adventure game NSI mini-project
       - [IMAGE SYSTEM] ?
         - **{IF:YES ; TODO:LATER}**
       - ["STATE MACHINE"]
+      - ["CHARACTER CUSTOMIZATION"]
+        - **{LIKE:Dwarf Fortress}**
   - [IDEAS]
     - [TITLE]
       - [IDEAS]
@@ -76,5 +78,12 @@ Repository for the adventure game NSI mini-project
           - **{CHOSEN!}**
         - `White Desert`
           - **{2BEAPPROVED}**
+    - [GAME/PLOT]
+      - [r:`Time-Shifted Realms`]
+        - [p:`Reversed Time`]
+          - A place where the flow of Time is reversed
+          - ?GAME:Go back from the last step to the first one (like basement to bedroom)
+        - [p:`Shattered Time`]
+          - A place where the flow of Time is shattered, things are chaoticly out of order
 
 ---
