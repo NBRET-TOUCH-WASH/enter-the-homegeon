@@ -15,6 +15,7 @@ Repository for the adventure game NSI mini-project
       - [INPUT SYSTEM]
       - [MOVEMENT SYSTEM]
       - [IMAGE SYSTEM] ?
+        - **{IF:YES ; TODO:LATER}**
       - ["STATE MACHINE"]
   - [IDEAS]
     - [TITLE]
@@ -33,16 +34,47 @@ Repository for the adventure game NSI mini-project
         <!--- "[insert chemical element here]" -->
     - [ART]
       - ASCII?
-        - **{TO BE ADDED LATER ; NOT TOO IMPORTANT FOR NOW}**
+        - **{TODO LATER ; NOT TOO IMPORTANT FOR NOW}**
     - [MUSIC]
       - 8-bit DOS SoundTrack
-        - kinda like in Aidof's games
+        - kinda like in `Aidof`'s games
           - [- Itch.Io link -](https://airdorf.itch.io/)
-          - *FAITH*
-          - *"The Wind"*
+          - `FAITH`
+          - `"The Wind"`
         - **{CHOSEN!}**
-      - Giygas Theme
+      - `DDLC` - `Doki Doki Litterature Club` OST
+        - `5 yuri2`
+          - **{2BEAPPROVED}**
+      - `Doom` OST
+        - `Doom II`
+          - `Map 30` - `Entrance to Hell`
+            - **{FOR:CREDITS?}**
+            - **{2BEAPPROVED}**
+      - `Giygas` theme
         - **{YES.}**
-        - **{TODO:Lower Floors}**
+        - `Giygas' Intro`
+          - **{CHOSEN!}**
+        - `Giygas' Intimidation`
+          - **{CHOSEN!}**
+        - `Giygas is Wounded`
+          - **{2BEAPPROVED}**
+        - `Giygas is Fatally Wounded`
+          - **{2BEAPPROVED}**
+        <!--- **{TODO:Lower Floors}** -->
+      - `JAZZPUNK` OST
+        - `Instant Coagulation`
+          - **{2BEAPPROVED}**
+      - `Sonic CD USA Boss theme` / `Secret Anti-Piracy Message` / `Infinite fun - Sega Enterprises` music
+        - **{CHOSEN!}**
+      - `Spooky's Jump Scare Mansion` OST
+        - `The Merchant`
+          - **{CHOSEN!}**
+      - `Water Womb World OST` OST
+        - **{2BEAPPROVED}**
+      - `Yume Nikki` OST
+        - `Number World`
+          - **{CHOSEN!}**
+        - `White Desert`
+          - **{2BEAPPROVED}**
 
 ---
