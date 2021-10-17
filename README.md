@@ -79,11 +79,14 @@ Repository for the adventure game NSI mini-project
         - `White Desert`
           - **{2BEAPPROVED}**
     - [GAME/PLOT]
-      - [r:`Time-Shifted Realms`]
-        - [p:`Reversed Time`]
+      - `Time-Shifted Realms`
+        - `Reversed Time`
           - A place where the flow of Time is reversed
           - ?GAME:Go back from the last step to the first one (like basement to bedroom)
-        - [p:`Shattered Time`]
+        - `Shattered Time`
           - A place where the flow of Time is shattered, things are chaoticly out of order
+    - [CHARs/ENTITIES]
+      - `G-Man-like` **{TEMPORARY NAME}**
+        - A strange, calm, seemingly aware of things you'd never be of.
 
 ---
