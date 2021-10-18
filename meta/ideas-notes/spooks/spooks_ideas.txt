@@ -1,0 +1,4 @@
+- [GAMEPLAY]
+        - [MAP]
+          - have an ascii map
+            - have it suddenly removed at some point

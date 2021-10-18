@@ -20,6 +20,8 @@ Repository for the adventure game NSI mini-project
       - ["CHARACTER CUSTOMIZATION"]
         - **{LIKE:Dwarf Fortress}**
   - [IDEAS]
+    - [SPOOKS]
+      - *(see `main/meta/ideas-notes/spooks/spooks_ideas.txt`)*
     - [TITLE]
       - [IDEAS]
         - `TEH HOUSE`
@@ -78,7 +80,7 @@ Repository for the adventure game NSI mini-project
           - **{CHOSEN!}**
         - `White Desert`
           - **{2BEAPPROVED}**
-    - [GAME/PLOT]
+    - [LOCATIONS]
       - `Time-Shifted Realms`
         - `Reversed Time`
           - A place where the flow of Time is reversed
