@@ -5,7 +5,7 @@ Repository for the adventure game NSI mini-project
 
 ---
 
-## ROADMAP/STUFF LIST lmao:
+## TODO/STUFF LIST lmao:
 &nbsp;
 
 - Adventure Game
@@ -20,8 +20,7 @@ Repository for the adventure game NSI mini-project
       - ["CHARACTER CUSTOMIZATION"]
         - **{LIKE:Dwarf Fortress}**
   - [IDEAS]
-    - [SPOOKS]
-      - *(see `main/meta/ideas-notes/spooks/spooks_ideas.txt`)*
+    - *For additional files not present in the README, see* `main/meta/ideas-notes`
     - [TITLE]
       - [IDEAS]
         - `TEH HOUSE`
