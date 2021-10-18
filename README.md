@@ -52,14 +52,14 @@ Repository for the adventure game NSI mini-project
       - Doom OST
         - Doom II
           - `Map 30` - `Entrance to Hell`
-            - **{FOR:CREDITS?}**
+            - **{FOR?}CREDITS**
             - **{2BEAPPROVED}**
       - Giygas theme
-        - **{YES.}**
+        - **{CHOSEN ; SEE WHICH PART(S) TO PICK}**
         - `Giygas' Intro`
-          - **{CHOSEN!}**
+          - **{CHOSEN}**
         - `Giygas' Intimidation`
-          - **{CHOSEN!}**
+          - **{CHOSEN}**
         - `Giygas is Wounded`
           - **{2BEAPPROVED}**
         - `Giygas is Fatally Wounded`
@@ -72,17 +72,21 @@ Repository for the adventure game NSI mini-project
         - Silent Hill 2
             - `Prisonic Fairytale`
               - **{2BEAPPROVED}**
-              - **{FOR:Time-Shifted Realms?}**
-      - `Sonic CD USA Boss theme` / `Secret Anti-Piracy Message` / `Infinite fun - Sega Enterprises` music
-        - **{CHOSEN!}**
+              - **{FOR?}Time-Shifted Realms**
+            - `World Of Madness`
+              - **{2BEAPPROVED}**
+              - **{FOR?} Time-Shifted Realms - Shattered Time**
+      - Sonic CD OST
+        - `USA Boss theme` / `Secret Anti-Piracy Message` / `Infinite fun - Sega Enterprises` music
+          - **{CHOSEN}**
       - Spooky's Jump Scare Mansion OST
         - `The Merchant`
-          - **{CHOSEN!}**
-      - `Water Womb World OST` OST
+          - **{CHOSEN}**
+      - `Water Womb World` OST
         - **{2BEAPPROVED}**
       - Yume Nikki OST
         - `Number World`
-          - **{CHOSEN!}**
+          - **{CHOSEN}**
         - `White Desert`
           - **{2BEAPPROVED}**
     - [LOCATIONS]
@@ -94,6 +98,7 @@ Repository for the adventure game NSI mini-project
           - A place where the flow of Time is shattered, things are chaoticly out of order
     - [CHARs/ENTITIES]
       - `G-Man-like` **{TEMPORARY NAME}**
+        - **{PROBABLY REJECTED}**
         - A strange, calm, seemingly aware of things you'd never be of.
 
 ---
