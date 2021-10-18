@@ -41,7 +41,7 @@ Repository for the adventure game NSI mini-project
         - **{TODO LATER ; NOT TOO IMPORTANT FOR NOW}**
     - [MUSIC]
       - 8-bit DOS SoundTrack
-        - kinda like in `Aidof`'s games
+        - kinda like in Airdof's games
           - [- Itch.Io link -](https://airdorf.itch.io/)
           - `FAITH`
           - `"The Wind"`
@@ -49,12 +49,12 @@ Repository for the adventure game NSI mini-project
       - `DDLC` - `Doki Doki Litterature Club` OST
         - `5 yuri2`
           - **{2BEAPPROVED}**
-      - `Doom` OST
-        - `Doom II`
+      - Doom OST
+        - Doom II
           - `Map 30` - `Entrance to Hell`
             - **{FOR:CREDITS?}**
             - **{2BEAPPROVED}**
-      - `Giygas` theme
+      - Giygas theme
         - **{YES.}**
         - `Giygas' Intro`
           - **{CHOSEN!}**
@@ -65,17 +65,22 @@ Repository for the adventure game NSI mini-project
         - `Giygas is Fatally Wounded`
           - **{2BEAPPROVED}**
         <!--- **{TODO:Lower Floors}** -->
-      - `JAZZPUNK` OST
+      - JAZZPUNK OST
         - `Instant Coagulation`
           - **{2BEAPPROVED}**
+      - Silent Hill OST
+        - Silent Hill 2
+            - `Prisonic Fairytale`
+              - **{2BEAPPROVED}**
+              - **{FOR:Time-Shifted Realms?}**
       - `Sonic CD USA Boss theme` / `Secret Anti-Piracy Message` / `Infinite fun - Sega Enterprises` music
         - **{CHOSEN!}**
-      - `Spooky's Jump Scare Mansion` OST
+      - Spooky's Jump Scare Mansion OST
         - `The Merchant`
           - **{CHOSEN!}**
       - `Water Womb World OST` OST
         - **{2BEAPPROVED}**
-      - `Yume Nikki` OST
+      - Yume Nikki OST
         - `Number World`
           - **{CHOSEN!}**
         - `White Desert`
