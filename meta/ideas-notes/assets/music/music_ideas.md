@@ -1,0 +1,53 @@
+# Adventure Game ; Enter the Homegeon
+
+## [MUSIC]
+
+- 8-bit DOS SoundTrack
+- kinda like in Airdof's games
+    - [- Itch.Io link -](https://airdorf.itch.io/)
+    - `FAITH`
+    - `"The Wind"`
+- **{CHOSEN!}**
+- `DDLC` - `Doki Doki Litterature Club` OST
+- `5 yuri2`
+    - **{2BEAPPROVED}**
+- Doom OST
+- Doom II
+    - `Map 30` - `Entrance to Hell`
+    - **{FOR?}CREDITS**
+    - **{2BEAPPROVED}**
+- Giygas theme
+- **{CHOSEN ; SEE WHICH PART(S) TO PICK}**
+- `Giygas' Intro`
+    - **{CHOSEN}**
+- `Giygas' Intimidation`
+    - **{CHOSEN}**
+- `Giygas is Wounded`
+    - **{2BEAPPROVED}**
+- `Giygas is Fatally Wounded`
+    - **{2BEAPPROVED}**
+<!--- **{TODO:Lower Floors}** -->
+- JAZZPUNK OST
+- `Instant Coagulation`
+    - **{2BEAPPROVED}**
+- Silent Hill OST
+- Silent Hill 2
+    - `Prisonic Fairytale`
+        - **{2BEAPPROVED}**
+        - **{FOR?}Time-Shifted Realms**
+    - `World Of Madness`
+        - **{2BEAPPROVED}**
+        - **{FOR?} Time-Shifted Realms - Shattered Time**
+- Sonic CD OST
+- `USA Boss theme` / `Secret Anti-Piracy Message` / `Infinite fun - Sega Enterprises` music
+    - **{CHOSEN}**
+- Spooky's Jump Scare Mansion OST
+- `The Merchant`
+    - **{CHOSEN}**
+- `Water Womb World` OST
+- **{2BEAPPROVED}**
+- Yume Nikki OST
+- `Number World`
+    - **{CHOSEN}**
+- `White Desert`
+    - **{2BEAPPROVED}**
