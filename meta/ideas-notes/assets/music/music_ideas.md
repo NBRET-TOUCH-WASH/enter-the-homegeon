@@ -31,6 +31,9 @@
   - `Instant Coagulation`
       - **{2BEAPPROVED}**
 - Silent Hill OST
+  - Silent Hill
+    - `Not Tomorrow (Lisa's Theme)`
+      - **{FOR?}CREDITS**
   - Silent Hill 2
       - `Prisonic Fairytale`
           - **{2BEAPPROVED}**
