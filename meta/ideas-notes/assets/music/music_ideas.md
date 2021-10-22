@@ -16,17 +16,20 @@
       - `Map 30` - `Entrance to Hell`
       - **{FOR?}CREDITS**
       - **{2BEAPPROVED}**
-- Giygas theme
-  - **{CHOSEN ; SEE WHICH PART(S) TO PICK}**
-  - `Giygas' Intro`
-      - **{CHOSEN}**
-  - `Giygas' Intimidation`
-      - **{CHOSEN}**
-  - `Giygas is Wounded`
-      - **{2BEAPPROVED}**
-  - `Giygas is Fatally Wounded`
-      - **{2BEAPPROVED}**
-<!--- **{TODO:Lower Floors}** -->
+- Earthbound OST
+  - **{FOR} LOWER FLOORS**
+  - Giygas theme
+    - **{CHOSEN ; SEE WHICH PART(S) TO PICK}**
+    - `Giygas' Intro`
+        - **{CHOSEN}**
+    - `Giygas' Intimidation`
+        - **{CHOSEN}**
+    - `Giygas is Wounded`
+        - **{2BEAPPROVED}**
+    - `Giygas is Fatally Wounded`
+        - **{2BEAPPROVED}**
+    - `The Place (The Cave of the Past)`
+        - **{2BEAPPROVED}**
 - JAZZPUNK OST
   - `Instant Coagulation`
       - **{2BEAPPROVED}**
@@ -45,7 +48,7 @@
     - `Resting Comfortably`
       - **{FOR?}** Non-Spooky beginning segment
 - Sonic CD OST
-  - `USA Boss theme` / `Secret Anti-Piracy Message` / `Infinite fun - Sega Enterprises` music
+  - `USA Boss theme` / `Potential Secret Anti-Piracy Message` / `Infinite fun - Sega Enterprises (USA version)` music
       - **{CHOSEN}**
 - Spooky's Jump Scare Mansion OST
   - `The Merchant`
