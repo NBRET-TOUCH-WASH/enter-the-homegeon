@@ -12,58 +12,65 @@
 - 8-bit DOS SoundTrack
   - **{CHOSEN!}**
   - kinda like in Airdof's games
-      - [- Itch.Io link -](https://airdorf.itch.io/)
-      - `FAITH`
-      - `"The Wind"`
+    - [- Itch.Io link -](https://airdorf.itch.io/)
+    - `FAITH`
+    - `"The Wind"`
 - `DDLC` - `Doki Doki Litterature Club` OST
   - `5 yuri2`
-      - **{2BEAPPROVED}**
+    - **{2BEAPPROVED}**
 - Doom OST
   - Doom II
-      - `Map 30` - `Entrance to Hell`
-      - **{FOR?}CREDITS**
-      - **{2BEAPPROVED}**
+    - `Map 30` - `Entrance to Hell`
+    - **{FOR?}CREDITS**
+    - **{2BEAPPROVED}**
 - Earthbound OST
   - **{FOR} LOWER FLOORS**
   - Giygas theme
     - **{CHOSEN ; SEE WHICH PART(S) TO PICK}**
     - `Giygas' Intro`
-        - **{CHOSEN}**
+      - **{CHOSEN}**
     - `Giygas' Intimidation`
-        - **{CHOSEN}**
+      - **{CHOSEN}**
     - `Giygas is Wounded`
-        - **{2BEAPPROVED}**
+      - **{2BEAPPROVED}**
     - `Giygas is Fatally Wounded`
-        - **{2BEAPPROVED}**
+      - **{2BEAPPROVED}**
     - `The Place (The Cave of the Past)`
-        - **{2BEAPPROVED}**
+      - **{2BEAPPROVED}**
 - JAZZPUNK OST
   - `Instant Coagulation`
-      - **{2BEAPPROVED}**
+    - **{2BEAPPROVED}**
 - Silent Hill OST
   - Silent Hill
     - `Not Tomorrow (Lisa's Theme)`
       - **{FOR?}CREDITS**
   - Silent Hill 2
-      - `Prisonic Fairytale`
-          - **{2BEAPPROVED}**
-          - **{FOR?}Time-Shifted Realms**
-      - `World Of Madness`
-          - **{2BEAPPROVED}**
-          - **{FOR?} Time-Shifted Realms - Shattered Time**
+    - `Prisonic Fairytale`
+      - **{2BEAPPROVED}**
+      - **{FOR?}Time-Shifted Realms**
+    - `World Of Madness`
+      - **{2BEAPPROVED}**
+      - **{FOR?} Time-Shifted Realms - Shattered Time**
   - Silent Hill 4
     - `Resting Comfortably`
-      - **{FOR?}** Non-Spooky beginning segment
+    - **{FOR?}** Non-Spooky beginning segment
 - Sonic CD OST
   - `USA Boss theme` / `Potential Secret Anti-Piracy Message` / `Infinite fun - Sega Enterprises (USA version)` music
-      - **{CHOSEN}**
+    - **{CHOSEN}**
 - Spooky's Jump Scare Mansion OST
   - `The Merchant`
-      - **{CHOSEN}**
+    - **{CHOSEN}**
 - `Water Womb World` OST
-  - **{2BEAPPROVED}**
+  - **{PROBABLY NOT}**
 - Yume Nikki OST
+  - `Dark World`
+    - **{2BEAPPROVED}**
+    - **{FOR?} UPPER/NORMAL FLOOR(S)**
   - `Number World`
-      - **{CHOSEN}**
+    - **{CHOSEN}**
+  - `Snow World`
+    - **{2BEAPPROVED}**
+    - **{FOR?} GOOD ENDING**
+    - **{FOR?} UPPER/NORMAL FLOOR(S)**
   - `White Desert`
-      - **{2BEAPPROVED}**
+    - **{2BEAPPROVED}**
