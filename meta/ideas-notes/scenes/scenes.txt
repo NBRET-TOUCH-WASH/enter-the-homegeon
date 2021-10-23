@@ -1,0 +1,3 @@
+- [SCENES]
+    - some scene with a dithered heart, like in critters for sale
+        - use a gif, split its frames, dither them, put em back together again
