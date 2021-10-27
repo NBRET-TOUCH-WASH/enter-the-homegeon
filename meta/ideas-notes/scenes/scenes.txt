@@ -1,3 +1,9 @@
 - [SCENES]
     - some scene with a dithered heart, like in critters for sale
         - use a gif, split its frames, dither them, put em back together again
+    - room with first key
+        - b4 get key:
+            - "something shines in the room"
+        - after get key:
+            - "the room has lost its only shine" or soem shit like that
+                - metaphorical for some shit idk what yet lmao
