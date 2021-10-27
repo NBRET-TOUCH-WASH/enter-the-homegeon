@@ -84,7 +84,7 @@ def movement(direction, argPlayerRoom):
         if argPlayerRoom == 7:
             return 8
         if argPlayerRoom == 10:
-            print("OOB\n")
+            print("WIP\n")
             return 0
 
     if direction == "w":
