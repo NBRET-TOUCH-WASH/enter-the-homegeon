@@ -44,6 +44,7 @@ notes:
                         ! RETURNS "None" IT SAYS "No Objects in the Room" OR WHATEVER
                     $
                     $ btw i added a fÜnnÎ comment somewhere as usual
+                    ! CAREFUL WITH THE MERGING, WE LOST THE OKUYASU ONE CUZ OF IT :(
 """
 
 
