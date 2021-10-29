@@ -19,6 +19,10 @@
 - `DDLC` - `Doki Doki Litterature Club` OST
   - `5 yuri2`
     - **{2BEAPPROVED}**
+- `Shadowgate` [NES] OST
+  - `[Game Over]` music
+    - **{CHOSEN!}**
+    - **{FOR} NON-SPOOKY GAME OVERs**
 - Doom OST
   - Doom II
     - `Map 30` - `Entrance to Hell`
