@@ -119,5 +119,5 @@ menu = """
 
 while True:
     print(menu)
-    playerRoom = movement(input("direction\n> "),playerRoom)
-    state_machine.state_machine(playerRoom)
+    print("Current Location:\n{}\n".format(state_machine.state_machine(playerRoom)))
+    playerRoom = movement(input("Where do you want to go? ('N'/'S'/'E'/'W')\n> "),playerRoom)

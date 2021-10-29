@@ -42,6 +42,7 @@ notes:
 
 
 #libraries/modules
+import libs.rooms.rooms as rooms
 
 
 #libs setup
@@ -53,25 +54,26 @@ notes:
 #functions
 def state_machine(argCurrentRoom):
     if argCurrentRoom == 1:
-        print("You are at the bottom of the staircase. [1]\n")
+        return "{} [{}]\n".format(rooms.downStairs.name,rooms.downStairs.number)
     if argCurrentRoom == 2:
-        print("You are at the beginning of the hallway. [2]\n")
+        return "{} [{}]\n".format(rooms.hallway2.name,rooms.hallway2.number)
     if argCurrentRoom == 3:
-        print("You are at the end of the hallway. [3]\n")
+        return "{} [{}]\n".format(rooms.hallway3.name,rooms.hallway3.number)
     if argCurrentRoom == 4:
-        print("You are in the bathroom. [4]\n")
+        return "{} [{}]\n".format(rooms.bathroom.name,rooms.bathroom.number)
     if argCurrentRoom == 5:
-        print("You are in the living room. [5]\n")
+        return "{} [{}]\n".format(rooms.livingRoom.name,rooms.livingRoom.number)
     if argCurrentRoom == 6:
-        print("You are in the dining room. [6]\n")
+        return "{} [{}]\n".format(rooms.diningRoom.name,rooms.diningRoom.number)
     if argCurrentRoom == 7:
-        print("You are in the entrance.\nIn front of you is the front door. [7]\n")
+        return "{} [{}]\n".format(rooms.entrance.name,rooms.entrance.number)
     if argCurrentRoom == 8:
-        print("You are at the beginning of the hallway. [8]\n")
+        return "{} [{}]\n".format(rooms.hallway8.name,rooms.hallway8.number)
     if argCurrentRoom == 9:
-        print("You are in the middle of the hallway. [9]\n")
+        return "{} [{}]\n".format(rooms.hallway9.name,rooms.hallway9.number)
     if argCurrentRoom == 10:
-        print("You are at the end of the hallway.\nIn front of you is the door leading down the basement. [10]\n")
+        return "{} [{}]\n".format(rooms.basementEntrance.name,rooms.basementEntrance.number)
+        #print("You are at the end of the hallway.\nIn front of you is the door leading down the basement. [10]\n")
 
 
 #script
