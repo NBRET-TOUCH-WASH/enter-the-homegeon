@@ -29,6 +29,7 @@ notes:
 
 #libraries/modules
 import libs.state_machine.state_machine as state_machine
+import libs.observ.observ as observ
 
 
 #libs setup
