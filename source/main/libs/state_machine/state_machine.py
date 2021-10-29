@@ -54,26 +54,26 @@ import libs.rooms.rooms as rooms
 #functions
 def state_machine(argCurrentRoom):
     if argCurrentRoom == 1:
-        return "{} [{}]\n".format(rooms.downStairs.name,rooms.downStairs.number)
+        return "[{}] {}".format(rooms.downStairs.number,rooms.downStairs.name)
     if argCurrentRoom == 2:
-        return "{} [{}]\n".format(rooms.hallway2.name,rooms.hallway2.number)
+        return "[{}] {}".format(rooms.hallway2.number,rooms.hallway2.name)
     if argCurrentRoom == 3:
-        return "{} [{}]\n".format(rooms.hallway3.name,rooms.hallway3.number)
+        return "[{}] {}".format(rooms.hallway3.number,rooms.hallway3.name)
     if argCurrentRoom == 4:
-        return "{} [{}]\n".format(rooms.bathroom.name,rooms.bathroom.number)
+        return "[{}] {}".format(rooms.bathroom.number,rooms.bathroom.name)
     if argCurrentRoom == 5:
-        return "{} [{}]\n".format(rooms.livingRoom.name,rooms.livingRoom.number)
+        return "[{}] {}".format(rooms.livingRoom.number,rooms.livingRoom.name)
     if argCurrentRoom == 6:
-        return "{} [{}]\n".format(rooms.diningRoom.name,rooms.diningRoom.number)
+        return "[{}] {}".format(rooms.diningRoom.number,rooms.diningRoom.name)
     if argCurrentRoom == 7:
-        return "{} [{}]\n".format(rooms.entrance.name,rooms.entrance.number)
+        return "[{}] {}".format(rooms.entrance.number,rooms.entrance.name)
     if argCurrentRoom == 8:
-        return "{} [{}]\n".format(rooms.hallway8.name,rooms.hallway8.number)
+        return "[{}] {}".format(rooms.hallway8.number,rooms.hallway8.name)
     if argCurrentRoom == 9:
-        return "{} [{}]\n".format(rooms.hallway9.name,rooms.hallway9.number)
+        return "[{}] {}".format(rooms.hallway9.number,rooms.hallway9.name)
     if argCurrentRoom == 10:
-        return "{} [{}]\n".format(rooms.basementEntrance.name,rooms.basementEntrance.number)
-        #print("You are at the end of the hallway.\nIn front of you is the door leading down the basement. [10]\n")
+        return "[{}] {}".format(rooms.basementEntrance.number,rooms.basementEntrance.name)
+        #print("You are at the end of the hallway.\nIn front of you is the door leading down the basement. [10]")
 
 
 #script
