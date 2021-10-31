@@ -37,7 +37,7 @@ notes:
 
 
 #classes
-class Room():
+class Room():#Cabbage fart?
     def __init__(self,number,name,*objects):
         self.number = number
         self.name = name
