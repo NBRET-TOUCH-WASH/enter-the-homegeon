@@ -54,8 +54,11 @@ notes:
 
 #libraries/modules
 import libs.state_machine.state_machine as state_machine
-import libs.observ.observ as observ
+
+import libs.menu.menu as libmenu
+
 import libs.movement.move as move
+import libs.observ.observ as observ
 
 
 #libs setup
@@ -68,12 +71,18 @@ import libs.movement.move as move
 
 
 #script
-playerRoom = 1
-
-menu = """
- o
+FirstFloorMap = """
+[1]
  |
-[1] [  6  ] [10]-o
+[   2   ]-[6]
+ |  |  |   |
+[3][4][5] (>)
+"""
+
+GroundFloorMap = """
+(<)
+ |
+[1] [  6  ] [10]-(>)
  |   |   |   |
  |   |   |   |
 [2]-[  5  ] [9 ]
@@ -91,12 +100,13 @@ X - WIP
 """
 
 
+playerRoom = 1
+
 while True:
-    print(menu)
+    print(GroundFloorMap)
     print("Current Location:\n{}\n\n".format(state_machine.state_machine(playerRoom)))
-    #print(actionMenu)
-    
-    actionUserChoice = int(input("{}\n> ".format(actionMenu)))#$ NBRET WAS HERE
+
+    actionUserChoice = int(input("{}\n> ".format(actionMenu)))
     if actionUserChoice == 1:
         playerRoom = move.movement(input("Where do you want to go? ('N'/'S'/'E'/'W')\n> "),playerRoom)
     elif actionUserChoice == 2:
