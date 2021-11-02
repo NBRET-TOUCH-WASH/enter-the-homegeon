@@ -72,9 +72,9 @@ import libs.observ.observ as observ
 FirstFloorMap = """
 [1]
  |
-[   2   ]-[6]
+[2  3  4]-[8]
  |  |  |   |
-[3][4][5] (>)
+[5][6][7] (>)
 """
 
 GroundFloorMap = """
@@ -98,14 +98,38 @@ X - WIP
 """
 
 
+userActionChoiceLoop = True
+
+playerFloor = 1#1 = upper floor ; 0 = ground floor ; -1 = basement ; (...)
 playerRoom = 1
 
-while True:
-    print(GroundFloorMap)
-    print("Current Location:\n{}\n\n".format(state_machine.state_machine(playerRoom)))
 
-    actionUserChoice = int(input("{}\n> ".format(actionMenu)))
+while True:
+    if playerFloor == 1:
+        print(FirstFloorMap)
+    elif playerFloor == 0:
+        print(GroundFloorMap)
+    elif playerFloor == -1:
+        print("WIP")
+    print("Current Location:\n{}\n\n".format(state_machine.state_machine(playerRoom,playerFloor)))
+
+    while userActionChoiceLoop == True:
+        try:
+            actionUserChoice = int(input("{}\n> ".format(actionMenu)))
+            break
+        except ValueError:
+            print("Invalid Action choice.")
+            continue
+
+
     if actionUserChoice == 1:
-        playerRoom = move.movement(input("Where do you want to go? ('N'/'S'/'E'/'W')\n> "),playerRoom)
+        playerRoom = move.movement(input("Where do you want to go? ('N'/'S'/'E'/'W')\n> "),playerRoom,playerFloor)
+        if playerRoom == "GOTOF1":
+            playerRoom = 8
+            playerFloor = 1
+        elif playerRoom == "GOTOF0":
+            playerRoom = 1
+            playerFloor = 0
+
     elif actionUserChoice == 2:
         observ.look_around(playerRoom)
