@@ -59,11 +59,14 @@ notes:
 
 #libraries/modules
 #from time import sleep
+import sys
 
 
 import libs.game_states.game_states as game_states
 import libs.actions.player_actions as player_actions
 
+import libs.ui.menus.title_screen.title_screen as title_screen
+import libs.ui.menus.title_screen.about as about
 import libs.display.display as display
 import libs.maps.maps as maps
 
@@ -106,42 +109,61 @@ playerRoom = 1
 
 while True:
     display.clearConsole()
+    userTitleChoice = int(input("{}{}> ".format(title_screen.titleTxt,title_screen.titleOptions)))
 
-    if playerFloor == 1:
-        print(maps.FirstFloorMap)
-    elif playerFloor == 0:
-        print(maps.GroundFloorMap)
-    elif playerFloor == -1:
-        print("WIP")
+    if userTitleChoice == 1:
+        while True:
+            display.clearConsole()
 
-    print("Current Location:\n{}\n\n".format(state_machine.state_machine(playerRoom,playerFloor)))
+            if playerFloor == 1:
+                print(maps.FirstFloorMap)
+            elif playerFloor == 0:
+                print(maps.GroundFloorMap)
+            elif playerFloor == -1:
+                print("WIP")
 
-
-    while userActionChoiceLoop == True:#% TOFIX
-        try:
-            actionUserChoice = int(input("{}\n> ".format(actionMenu)))
-            break
-        except ValueError:
-            print("Invalid Action choice.")
-            continue
+            print("Current Location:\n{}\n\n".format(state_machine.state_machine(playerRoom,playerFloor)))
 
 
-    if actionUserChoice == 1:
-        playerRoom = move.movement(input("Where do you want to go? ('N'/'S'/'E'/'W')\n> "),playerRoom,playerFloor)
+            while userActionChoiceLoop == True:#% TOFIX
+                try:
+                    actionUserChoice = int(input("{}\n> ".format(actionMenu)))
+                    break
+                except ValueError:
+                    print("Invalid Action choice.")
+                    continue
 
-        if playerRoom == "GOTOF1":
-            playerRoom = 8
-            playerFloor = 1
-        elif playerRoom == "GOTOF0":
-            playerRoom = 1
-            playerFloor = 0
 
-    elif actionUserChoice == 2:
-        actionMenuChoice = observ.look_around(int(input("{}\n> ".format(roomActionsMenu))),playerRoom,playerFloor)
+            if actionUserChoice == 1:
+                playerRoom = move.movement(input("Where do you want to go? ('N'/'S'/'E'/'W')\n> "),playerRoom,playerFloor)
 
-        if actionMenuChoice == 2:
-            playerChosenAction = player_actions.choose_action(int(input("Select an available action:\n> ")),playerRoom,playerFloor)
-            if playerChosenAction == "PLAYERISDEAD":
-                game_states.game_over()
+                if playerRoom == "GOTOF1":
+                    playerRoom = 8
+                    playerFloor = 1
+                elif playerRoom == "GOTOF0":
+                    playerRoom = 1
+                    playerFloor = 0
 
+            elif actionUserChoice == 2:
+                actionMenuChoice = observ.look_around(int(input("{}\n> ".format(roomActionsMenu))),playerRoom,playerFloor)
+
+                if actionMenuChoice == 2:
+                    playerChosenAction = player_actions.choose_action(int(input("Select an available action:\n> ")),playerRoom,playerFloor)
+                    if playerChosenAction == "PLAYERISDEAD":
+                        game_states.game_over()
+
+                input("(press any key to continue...) > ")
+
+
+    elif userTitleChoice == 2:
+        display.clearConsole()
+        print(about.aboutSectionTitle,about.aboutSectionTxt)
         input("(press any key to continue...) > ")
+
+
+    elif userTitleChoice == 3:
+        sys.exit(0)
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#! WRITE THE ABOUT SECTION AFTER COMPLETING THE GAME
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
