@@ -1,7 +1,7 @@
 """
 notes:
     ? docs:
-        ? I said pick up the can.
+        ? Display-related content
 
     § TODO:
         § Amplify weapons on Wallhammer.
@@ -19,8 +19,7 @@ notes:
         ! Roger that. Waiting for contact. Over.
 
     $ LOGS:
-        $ 28/10/2021
-            $ Ready weapons, stay alert.
+        $ Ready weapons, stay alert.
 """
 
 
@@ -29,7 +28,7 @@ notes:
 
 
 #libraries/modules
-
+import os
 
 
 #libs setup
@@ -39,26 +38,11 @@ notes:
 
 
 #functions
+def clearConsole():
+    command = 'clear'
+    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
+        command = 'cls'
+    os.system(command)
 
 
 #script
-FirstFloorMap = """
-[1]
- |
-[2  3  4]-[8]
- |  |  |   |
-[5][6][7] (>)
-"""
-
-GroundFloorMap = """
-(<)
- |
-[1] [  6  ] [10]-(>)
- |   |   |   |
- |   |   |   |
-[2]-[  5  ] [9 ]
- |       |   |
-[3]-[4] [7]-[8 ]
-         |
-         o
-"""

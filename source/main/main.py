@@ -54,7 +54,10 @@ notes:
 
 
 #libraries/modules
-import os
+#from time import sleep
+
+
+import libs.display.display as display
 
 import libs.maps.maps as maps
 
@@ -71,11 +74,6 @@ import libs.observ.observ as observ
 
 
 #functions
-def clearConsole():
-    command = 'clear'
-    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
-        command = 'cls'
-    os.system(command)
 
 
 #script
@@ -94,7 +92,7 @@ playerRoom = 1
 
 
 while True:
-    clearConsole()
+    display.clearConsole()
 
     if playerFloor == 1:
         print(maps.FirstFloorMap)
@@ -115,6 +113,7 @@ while True:
 
     if actionUserChoice == 1:
         playerRoom = move.movement(input("Where do you want to go? ('N'/'S'/'E'/'W')\n> "),playerRoom,playerFloor)
+
         if playerRoom == "GOTOF1":
             playerRoom = 8
             playerFloor = 1

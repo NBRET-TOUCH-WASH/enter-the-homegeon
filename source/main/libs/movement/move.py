@@ -21,8 +21,7 @@ notes:
         ! Roger that. Waiting for contact. Over.
 
     $ LOGS:
-        $ 29/10/2021
-            $ XY:ABCPM
+        $ Ready weapons, stay alert.
 """
 
 
