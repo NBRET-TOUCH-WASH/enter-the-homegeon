@@ -100,7 +100,9 @@ while True:
         print(maps.GroundFloorMap)
     elif playerFloor == -1:
         print("WIP")
+
     print("Current Location:\n{}\n\n".format(state_machine.state_machine(playerRoom,playerFloor)))
+
 
     while userActionChoiceLoop == True:#% TOFIX
         try:
