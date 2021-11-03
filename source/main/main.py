@@ -100,7 +100,7 @@ X - WIP
 
 userActionChoiceLoop = True
 
-playerFloor = 1#1 = upper floor ; 0 = ground floor ; -1 = basement ; (...)
+playerFloor = 1#?1 = upper floor ; 0 = ground floor ; -1 = basement ; (...)
 playerRoom = 1
 
 
@@ -130,6 +130,5 @@ while True:
         elif playerRoom == "GOTOF0":
             playerRoom = 1
             playerFloor = 0
-
     elif actionUserChoice == 2:
-        observ.look_around(playerRoom)
+        observ.look_around(playerRoom,playerFloor)

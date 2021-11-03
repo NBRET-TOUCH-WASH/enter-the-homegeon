@@ -45,37 +45,100 @@ import libs.rooms.rooms as rooms
 
 
 #functions
-def look_around(argPlayerRoom):
-    if argPlayerRoom == 1:
-        for item in rooms.downStairs.objects:
-            print("Items in the room:\n¤    {}".format(item))#§ change spacing
-    if argPlayerRoom == 2:
-        for item in rooms.hallway2.objects:
-            print("Items in the room:\n¤    {}".format(item))
-    if argPlayerRoom == 3:
-        for item in rooms.hallway3.objects:
-            print("Items in the room:\n¤    {}".format(item))
-    if argPlayerRoom == 4:
-        for item in rooms.bathroom.objects:
-            print("Items in the room:\n¤    {}".format(item))
-    if argPlayerRoom == 5:
-        for item in rooms.livingRoom.objects:
-            print("Items in the room:\n¤    {}".format(item))
-    if argPlayerRoom == 6:
-        for item in rooms.diningRoom.objects:
-            print("Items in the room:\n¤    {}".format(item))
-    if argPlayerRoom == 7:
-        for item in rooms.entrance.objects:
-            print("Items in the room:\n¤    {}".format(item))
-    if argPlayerRoom == 8:
-        for item in rooms.hallway8.objects:
-            print("Items in the room:\n¤    {}".format(item))
-    if argPlayerRoom == 9:
-        for item in rooms.hallway9.objects:
-            print("Items in the room:\n¤    {}".format(item))
-    if argPlayerRoom == 10:
-        for item in rooms.basementEntrance.objects:
-            print("Items in the room:\n¤    {}".format(item))
+def look_around(argPlayerRoom, argPlayerFloor):
+    if argPlayerFloor == 1:
+        if argPlayerRoom == 1:
+            for item in rooms.F1bedroom.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 2:
+            for item in rooms.F1hallway2.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 3:
+            for item in rooms.F1hallway3.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 4:
+            for item in rooms.F1hallway4.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 5:
+            for item in rooms.F1siblingRoom5.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 6:
+            for item in rooms.F1parentsRoom6.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 7:
+            for item in rooms.F1restrooms7.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 8:
+            for item in rooms.F1hallway8.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+
+    if argPlayerFloor == 0:
+        if argPlayerRoom == 1:
+            for item in rooms.downStairs.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 2:
+            for item in rooms.hallway2.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 3:
+            for item in rooms.hallway3.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 4:
+            for item in rooms.bathroom.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 5:
+            for item in rooms.livingRoom.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 6:
+            for item in rooms.diningRoom.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 7:
+            for item in rooms.entrance.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 8:
+            for item in rooms.hallway8.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 9:
+            for item in rooms.hallway9.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
+        if argPlayerRoom == 10:
+            for item in rooms.basementEntrance.objects:
+                i = 0
+                print("Items in the room:\n{} -    {}".format(i+1,item))#§ change spacing
+                i += 1
 
 
 #script
