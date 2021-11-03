@@ -7,8 +7,7 @@ notes:
         § Amplify weapons on Wallhammer.
 
     % FIXME:
-        % L-125
-            % MAKE IT SO THE SCREEN CLEARS WHILE LETTING THE ERROR MESSAGE
+        % Target compromised: move in, move in.
 
         & FIX:
             & Overwatch, target one sterilized.
