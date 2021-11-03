@@ -20,7 +20,8 @@ notes:
 
     $ LOGS:
         $ 28/10/2021
-            $ Ready weapons, stay alert.
+            $ 01:54AM
+                $ don't really know where im going with this one
 """
 
 
@@ -29,6 +30,10 @@ notes:
 
 
 #libraries/modules
+import time
+
+
+import libs.display.display as display
 
 
 
@@ -39,25 +44,15 @@ notes:
 
 
 #functions
+def game_over():
+    display.clearConsole()
+    print("""
+   ___   _   __  __ ___    _____   _____ ___ 
+  / __| /_\ |  \/  | __|  / _ \ \ / / __| _ \\
+ | (_ |/ _ \| |\/| | _|  | (_) \ V /| _||   /
+  \___/_/ \_\_|  |_|___|  \___/ \_/ |___|_|_\\\n""")
+    time.sleep(3.0)
+    print("\" It's a sad thing that your adventures have ended here!! \"\n\t- Shadowgate (NES), 1989\n")
 
 
 #script
-FirstFloorMap = """
-[1]
- |
-[2  3  4]-[8]
- |  |  |   |
-[5][6][7] (>)
-"""
-
-GroundFloorMap = """
-(<)
- |
-[1] [  6  ] [10]-(>)
- |   |   |   |
-[2]-[  5  ] [9 ]
- |       |   |
-[3]-[4] [7]-[8 ]
-         |
-         o
-"""

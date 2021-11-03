@@ -36,6 +36,7 @@ notes:
 
 #libraries/modules
 import libs.rooms.rooms as rooms
+from libs.rooms.rooms import F0basementEntrance, F0bathroom, F0diningRoom, F0downStairs, F0entrance, F0hallway2, F0hallway3, F0hallway8, F0hallway9, F0livingRoom, F1bedroom, F1hallway2, F1hallway3, F1hallway4, F1hallway8, F1parentsRoom6, F1restrooms7, F1siblingRoom5
 
 
 #libs setup
@@ -45,101 +46,132 @@ import libs.rooms.rooms as rooms
 
 
 #functions
-def look_around(argPlayerRoom, argPlayerFloor):
-    if argPlayerFloor == 1:
-        if argPlayerRoom == 1:
-            for item in rooms.F1bedroom.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))#µ change spacing?
-                i += 1
-        if argPlayerRoom == 2:
-            for item in rooms.F1hallway2.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 3:
-            for item in rooms.F1hallway3.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 4:
-            for item in rooms.F1hallway4.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 5:
-            for item in rooms.F1siblingRoom5.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 6:
-            for item in rooms.F1parentsRoom6.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 7:
-            for item in rooms.F1restrooms7.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 8:
-            for item in rooms.F1hallway8.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
+def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
+    if argUserChoice == 1:
+        if argPlayerFloor == 1:
+            if argPlayerRoom == 1:
+                #for item in rooms.F1bedroom.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))#µ change spacing?
+                #    i += 1
+                if F1bedroom.objects != None:
+                    print("Items in the room:\n1 - {}".format(F1bedroom.objects))
+                else:
+                    print("There are no objects in the room.\n")
+            if argPlayerRoom == 2:
+                #for item in rooms.F1hallway2.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 3:
+                #for item in rooms.F1hallway3.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 4:
+                #for item in rooms.F1hallway4.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 5:
+                #for item in rooms.F1siblingRoom5.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 6:
+                #for item in rooms.F1parentsRoom6.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 7:
+                #for item in rooms.F1restrooms7.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 8:
+                #for item in rooms.F1hallway8.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
 
-    if argPlayerFloor == 0:
-        if argPlayerRoom == 1:
-            for item in rooms.downStairs.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 2:
-            for item in rooms.hallway2.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 3:
-            for item in rooms.hallway3.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 4:
-            for item in rooms.bathroom.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 5:
-            for item in rooms.livingRoom.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 6:
-            for item in rooms.diningRoom.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 7:
-            for item in rooms.entrance.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 8:
-            for item in rooms.hallway8.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 9:
-            for item in rooms.hallway9.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
-        if argPlayerRoom == 10:
-            for item in rooms.basementEntrance.objects:
-                i = 0
-                print("Items in the room:\n{} -    {}".format(i+1,item))
-                i += 1
+        if argPlayerFloor == 0:
+            if argPlayerRoom == 1:
+                #for item in rooms.downStairs.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 2:
+                #for item in rooms.hallway2.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 3:
+                #for item in rooms.hallway3.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 4:
+                #for item in rooms.bathroom.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            #if argPlayerRoom == 5:
+            #    for item in rooms.livingRoom.objects:
+            #        i = 0
+            #        print("Items in the room:\n1 - {}".format(i+1,item))
+            #        i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 6:
+            #    for item in rooms.diningRoom.objects:
+            #        i = 0
+            #        print("Items in the room:\n1 - {}".format(i+1,item))
+            #        i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 7:
+                #for item in rooms.entrance.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 8:
+                #for item in rooms.hallway8.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 9:
+                #for item in rooms.hallway9.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
+            if argPlayerRoom == 10:
+                #for item in rooms.basementEntrance.objects:
+                #    i = 0
+                #    print("Items in the room:\n1 - {}".format(i+1,item))
+                #    i += 1
+                print("There are no objects in the room.\n")
 
+    if argUserChoice == 2:
+        if argPlayerFloor == 1:
+            if argPlayerRoom == 1:
+                for action in rooms.F1bedroom.actions:
+                    i = 0
+                    print("\nActions available in this room:\n{} - {}{}".format(i+1,action,"\n"))#µ change spacing?
+                    i += 1
+        #return int(input("Choose an action:\n> "))
+    return argUserChoice
 
 #script
 """

@@ -20,7 +20,8 @@ notes:
 
     $ LOGS:
         $ 28/10/2021
-            $ Ready weapons, stay alert.
+            $ 01:54AM
+                $ don't really know where im going with this one
 """
 
 
@@ -29,6 +30,8 @@ notes:
 
 
 #libraries/modules
+#import time
+import libs.actions.f1actions as f1actions
 
 
 
@@ -39,25 +42,11 @@ notes:
 
 
 #functions
+def choose_action(argUserChoice,arguserRoom,argUserFloor):
+    if argUserFloor == 1:
+        if arguserRoom == 1:
+            if argUserChoice == 1:
+                return f1actions.jump_from_window()
 
 
 #script
-FirstFloorMap = """
-[1]
- |
-[2  3  4]-[8]
- |  |  |   |
-[5][6][7] (>)
-"""
-
-GroundFloorMap = """
-(<)
- |
-[1] [  6  ] [10]-(>)
- |   |   |   |
-[2]-[  5  ] [9 ]
- |       |   |
-[3]-[4] [7]-[8 ]
-         |
-         o
-"""

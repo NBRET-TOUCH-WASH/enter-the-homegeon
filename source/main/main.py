@@ -46,6 +46,10 @@ notes:
                     $
                     $ btw i added a fÜnnÎ comment somewhere as usual
                     ! CAREFUL WITH THE MERGING, WE LOST THE OKUYASU ONE CUZ OF IT :(
+        $ 03/11/2021
+            $ 10:41PM
+                $ i think im gonna completely change the way im headed with this project
+                $ and turn this into a shadowgate-like game lmao
 """
 
 
@@ -57,8 +61,10 @@ notes:
 #from time import sleep
 
 
-import libs.display.display as display
+import libs.game_states.game_states as game_states
+import libs.actions.player_actions as player_actions
 
+import libs.display.display as display
 import libs.maps.maps as maps
 
 import libs.state_machine.state_machine as state_machine
@@ -80,7 +86,14 @@ import libs.observ.observ as observ
 actionMenu = """
 Select an Action:
 1 - Move
-2 - Look around (searches the room for objects)
+2 - Investigate the room
+X - WIP
+"""
+
+roomActionsMenu = """
+What do you want to do in this room?
+1 - Look for objects
+2 - Look for available actions
 X - WIP
 """
 
@@ -122,6 +135,13 @@ while True:
         elif playerRoom == "GOTOF0":
             playerRoom = 1
             playerFloor = 0
+
     elif actionUserChoice == 2:
-        observ.look_around(playerRoom,playerFloor)
-        input("")
+        actionMenuChoice = observ.look_around(int(input("{}\n> ".format(roomActionsMenu))),playerRoom,playerFloor)
+
+        if actionMenuChoice == 2:
+            playerChosenAction = player_actions.choose_action(int(input("Select an available action:\n> ")),playerRoom,playerFloor)
+            if playerChosenAction == "PLAYERISDEAD":
+                game_states.game_over()
+
+        input("(press any key to continue...) > ")

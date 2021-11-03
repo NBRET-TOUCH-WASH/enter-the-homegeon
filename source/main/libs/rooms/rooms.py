@@ -38,10 +38,11 @@ notes:
 
 #classes
 class Room():#Cabbage fart?
-    def __init__(self,number,name,*objects):
+    def __init__(self,number,name,objects,*actions):
         self.number = number
         self.name = name
         self.objects = objects
+        self.actions = actions
 
 
 #functions
@@ -49,7 +50,7 @@ class Room():#Cabbage fart?
 
 #script
 #all objects currently set to None for safety, as idk what i want to add to rooms yet
-F1bedroom = Room(1,"Bedroom",None)
+F1bedroom = Room(1,"Bedroom",None,"Window: Jump")
 
 F1hallway2 = Room(2,"Beginning of Hallway",None)
 F1hallway3 = Room(3,"Middle of Hallway",None)
