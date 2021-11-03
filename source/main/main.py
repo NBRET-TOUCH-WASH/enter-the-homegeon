@@ -7,7 +7,8 @@ notes:
         § Amplify weapons on Wallhammer.
 
     % FIXME:
-        % Target compromised: move in, move in.
+        % L-125
+            % MAKE IT SO THE SCREEN CLEARS WHILE LETTING THE ERROR MESSAGE
 
         & FIX:
             & Overwatch, target one sterilized.
@@ -53,6 +54,10 @@ notes:
 
 
 #libraries/modules
+import os
+
+import libs.maps.maps as maps
+
 import libs.state_machine.state_machine as state_machine
 
 import libs.movement.move as move
@@ -66,30 +71,14 @@ import libs.observ.observ as observ
 
 
 #functions
+def clearConsole():
+    command = 'clear'
+    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
+        command = 'cls'
+    os.system(command)
 
 
 #script
-FirstFloorMap = """
-[1]
- |
-[2  3  4]-[8]
- |  |  |   |
-[5][6][7] (>)
-"""
-
-GroundFloorMap = """
-(<)
- |
-[1] [  6  ] [10]-(>)
- |   |   |   |
- |   |   |   |
-[2]-[  5  ] [9 ]
- |       |   |
-[3]-[4] [7]-[8 ]
-         |
-         o
-"""
-
 actionMenu = """
 Select an Action:
 1 - Move
@@ -105,15 +94,17 @@ playerRoom = 1
 
 
 while True:
+    clearConsole()
+
     if playerFloor == 1:
-        print(FirstFloorMap)
+        print(maps.FirstFloorMap)
     elif playerFloor == 0:
-        print(GroundFloorMap)
+        print(maps.GroundFloorMap)
     elif playerFloor == -1:
         print("WIP")
     print("Current Location:\n{}\n\n".format(state_machine.state_machine(playerRoom,playerFloor)))
 
-    while userActionChoiceLoop == True:
+    while userActionChoiceLoop == True:#% TOFIX
         try:
             actionUserChoice = int(input("{}\n> ".format(actionMenu)))
             break
@@ -132,3 +123,4 @@ while True:
             playerFloor = 0
     elif actionUserChoice == 2:
         observ.look_around(playerRoom,playerFloor)
+        input("")
