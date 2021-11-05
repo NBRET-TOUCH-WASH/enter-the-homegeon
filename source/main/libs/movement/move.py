@@ -144,6 +144,8 @@ def movement(direction, argPlayerRoom, argPlayerFloor):
             if argPlayerRoom == 7:
                 return 8
             if argPlayerRoom == 10:
+                if canOpenBasement == True:
+                    return "GOTOFDASH1"
                 print("WIP\n")
                 return 0
 
@@ -165,3 +167,4 @@ def movement(direction, argPlayerRoom, argPlayerFloor):
 
 
 #script
+canOpenBasement = False

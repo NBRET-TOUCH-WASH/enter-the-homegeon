@@ -50,7 +50,6 @@ class Room():#Cabbage fart?
 
 
 #script
-#all objects currently set to None for safety, as idk what i want to add to rooms yet
 F1bedroom = Room(1,"Bedroom",None,"WINDOW: Jump")
 
 F1hallway2 = Room(2,"Beginning of Hallway",None,None)
@@ -59,7 +58,7 @@ F1hallway4 = Room(4,"End of Hallway",None,None)
 
 F1siblingRoom5 = Room(5,"Sibling Room",None,"CLOSET: Change Clothes")
 F1parentsRoom6 = Room(6,"Parents Room",None,None)#TODO: ADD ACTION(S)
-F1restrooms7 = Room(7,"Restrooms",None,"TOILET: Flush","TOILET: Use","TOILET: d r i n k  h o l y  b e v e r a g e")
+F1restrooms7 = Room(7,"Restrooms","Basement Key","TOILET: Flush","TOILET: Use","TOILET: d r i n k  h o l y  b e v e r a g e")
 
 F1hallway8 = Room(8,"Front of the downwards staircase",None,None)
 
@@ -72,7 +71,7 @@ F0hallway3 = Room(3,"End of the hallway",None,None)
 F0bathroom = Room(4,"Bathroom",None,"MIRROR: Look at self","SINK: Wash Hands","SHOWER: Pull Curtain")
 
 F0livingRoom = Room(5,"Living Room",None,None)
-F0diningRoom = Room(6,"Dining Room",None,"CHAIR(S): s i t",)
+F0diningRoom = Room(6,"Dining Room","Entrance Key","CHAIR(S): s i t",)
 
 F0entrance = Room(7,"Entrance",None,"DOOR: Open - [REQUIRES KEY]")
 

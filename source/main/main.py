@@ -63,6 +63,8 @@ notes:
 import sys
 
 
+#import libs.game_states.endings.true_ending as true_ending
+
 import libs.game_states.game_states as game_states
 import libs.actions.player_actions as player_actions
 
@@ -75,6 +77,8 @@ import libs.state_machine.state_machine as state_machine
 
 import libs.movement.move as move
 import libs.observ.observ as observ
+
+import libs.inventory.inventory as inventory
 
 
 #libs setup
@@ -108,6 +112,9 @@ userActionChoiceLoop = True
 
 playerFloor = 1#?1 = upper floor ; 0 = ground floor ; -1 = basement ; (...)
 playerRoom = 1
+
+hasBasementKey = False
+hasEntranceKey = False
 
 
 while True:
@@ -146,17 +153,31 @@ while True:
                 elif playerRoom == "GOTOF0":
                     playerRoom = 1
                     playerFloor = 0
+                elif playerRoom == "GOTOFDASH1":
+                    playerRoom = 1
+                    playerFloor = -1
 
             elif actionUserChoice == 2:
-                actionMenuChoice = observ.look_around(int(input("{}\n> ".format(roomActionsMenu))),playerRoom,playerFloor)
+                try:
+                    actionMenuChoice = observ.look_around(int(input("{}\n> ".format(roomActionsMenu))),playerRoom,playerFloor)
+                except:
+                    continue
 
-                if actionMenuChoice == 2:
+                if actionMenuChoice == 1:
+                    objectTaken = inventory.get_object(playerRoom,playerFloor)
+                    if objectTaken == "HASBASEMENTKEY":
+                        move.canOpenBasement = True
+                    elif objectTaken == "HASENTRANCEKEY":
+                        hasEntranceKey = True
+                elif actionMenuChoice == 2:
                     playerChosenAction = player_actions.choose_action(int(input("Select an available action:\n> ")),playerRoom,playerFloor)
                     if playerChosenAction == "PLAYERISDEAD":
                         game_states.game_over()
                         newGameLaunched = False
+                else:
+                    pass
 
-                #input("(press any key to continue...) > ")
+                input("\n(press any key to continue...) > ")
 
 
     elif userTitleChoice == 2:
