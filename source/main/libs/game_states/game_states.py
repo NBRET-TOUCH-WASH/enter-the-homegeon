@@ -51,8 +51,11 @@ def game_over():
   / __| /_\ |  \/  | __|  / _ \ \ / / __| _ \\
  | (_ |/ _ \| |\/| | _|  | (_) \ V /| _||   /
   \___/_/ \_\_|  |_|___|  \___/ \_/ |___|_|_\\\n""")
-    time.sleep(3.0)
+    time.sleep(2.0)
     print("\" It's a sad thing that your adventures have ended here!! \"\n\t- Shadowgate (NES), 1989\n")
+
+    time.sleep(1.5)
+    input("(press any key to continue...) > ")
 
 
 #script

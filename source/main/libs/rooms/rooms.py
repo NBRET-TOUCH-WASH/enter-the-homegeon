@@ -4,7 +4,8 @@ notes:
         ? I said pick up the can.
 
     § TODO:
-        § Amplify weapons on Wallhammer.
+        § L-60
+            § ADD ACTION(S)
 
     % FIXME:
         % Target compromised: move in, move in.
@@ -50,31 +51,31 @@ class Room():#Cabbage fart?
 
 #script
 #all objects currently set to None for safety, as idk what i want to add to rooms yet
-F1bedroom = Room(1,"Bedroom",None,"Window: Jump")
+F1bedroom = Room(1,"Bedroom",None,"WINDOW: Jump")
 
-F1hallway2 = Room(2,"Beginning of Hallway",None)
-F1hallway3 = Room(3,"Middle of Hallway",None)
-F1hallway4 = Room(4,"End of Hallway",None)
+F1hallway2 = Room(2,"Beginning of Hallway",None,None)
+F1hallway3 = Room(3,"Middle of Hallway",None,None)
+F1hallway4 = Room(4,"End of Hallway",None,None)
 
-F1siblingRoom5 = Room(5,"Sibling Room",None)
-F1parentsRoom6 = Room(6,"Parents Room",None)
-F1restrooms7 = Room(7,"Restrooms",None)
+F1siblingRoom5 = Room(5,"Sibling Room",None,"CLOSET: Change Clothes")
+F1parentsRoom6 = Room(6,"Parents Room",None,None)#TODO: ADD ACTION(S)
+F1restrooms7 = Room(7,"Restrooms",None,"TOILET: Flush","TOILET: Use","TOILET: d r i n k  h o l y  b e v e r a g e")
 
-F1hallway8 = Room(8,"Front of the downwards staircase",None)
+F1hallway8 = Room(8,"Front of the downwards staircase",None,None)
 
 
 
-F0downStairs = Room(1,"Bottom of the staircase",None)
-F0hallway2 = Room(2,"Beginning of the hallway",None)
-F0hallway3 = Room(3,"End of the hallway",None)
+F0downStairs = Room(1,"Bottom of the staircase",None,None)
+F0hallway2 = Room(2,"Beginning of the hallway",None,"PAINTING: Observe")
+F0hallway3 = Room(3,"End of the hallway",None,None)
 
-F0bathroom = Room(4,"Bathroom",None)
+F0bathroom = Room(4,"Bathroom",None,"MIRROR: Look at self","SINK: Wash Hands","SHOWER: Pull Curtain")
 
-F0livingRoom = Room(5,"Living Room",None)
-F0diningRoom = Room(6,"Dining Room",None)
+F0livingRoom = Room(5,"Living Room",None,None)
+F0diningRoom = Room(6,"Dining Room",None,"CHAIR(S): s i t",)
 
-F0entrance = Room(7,"Entrance",None)
+F0entrance = Room(7,"Entrance",None,"DOOR: Open - [REQUIRES KEY]")
 
-F0hallway8 = Room(8,"Beginning of the hallway",None)
+F0hallway8 = Room(8,"Beginning of the hallway",None,None)
 F0hallway9 = Room(9,"End of the hallway",None)
-F0basementEntrance = Room(10,"Basement entrance",None)
+F0basementEntrance = Room(10,"Basement entrance",None,"DOOR: Open - [REQUIRES KEY]")

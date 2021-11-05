@@ -91,6 +91,10 @@ def movement(direction, argPlayerRoom, argPlayerFloor):
             if argPlayerRoom == 8:
                 return 4
 
+        if direction != "n" or direction != "s" or direction != "e" or direction != "w":
+            print("Invalid Movement.")
+            return argPlayerRoom
+
     if argPlayerFloor == 0:#? GROUND FLOOR
         
         if direction == "n":
@@ -153,6 +157,11 @@ def movement(direction, argPlayerRoom, argPlayerFloor):
                 return 2
             if argPlayerRoom == 8:
                 return 7
+
+        if direction != "n" or direction != "s" or direction != "e" or direction != "w":
+            print("Invalid Movement.")
+            return argPlayerRoom
+
 
 
 #script

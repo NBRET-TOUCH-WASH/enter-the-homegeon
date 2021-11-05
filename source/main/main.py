@@ -14,7 +14,8 @@ notes:
             & Overwatch, target one sterilized.
 
     µ WHYNOT:
-        µ Overwatch reports possible hostiles inbound.
+        µ f1actions.py
+            µ add more actions?
 
     ! IMPORTANT:
         ! Roger that. Waiting for contact. Over.
@@ -58,7 +59,7 @@ notes:
 
 
 #libraries/modules
-#from time import sleep
+#import time
 import sys
 
 
@@ -101,6 +102,8 @@ X - WIP
 """
 
 
+newGameLaunched = True
+
 userActionChoiceLoop = True
 
 playerFloor = 1#?1 = upper floor ; 0 = ground floor ; -1 = basement ; (...)
@@ -112,7 +115,7 @@ while True:
     userTitleChoice = int(input("{}{}> ".format(title_screen.titleTxt,title_screen.titleOptions)))
 
     if userTitleChoice == 1:
-        while True:
+        while newGameLaunched == True:
             display.clearConsole()
 
             if playerFloor == 1:
@@ -151,8 +154,9 @@ while True:
                     playerChosenAction = player_actions.choose_action(int(input("Select an available action:\n> ")),playerRoom,playerFloor)
                     if playerChosenAction == "PLAYERISDEAD":
                         game_states.game_over()
+                        newGameLaunched = False
 
-                input("(press any key to continue...) > ")
+                #input("(press any key to continue...) > ")
 
 
     elif userTitleChoice == 2:
@@ -166,4 +170,5 @@ while True:
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #! WRITE THE ABOUT SECTION AFTER COMPLETING THE GAME
+#! ADD SPOOPY UNUSED FILE
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
