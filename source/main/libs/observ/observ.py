@@ -38,6 +38,7 @@ notes:
 import libs.rooms.rooms as rooms
 from libs.rooms.rooms import F0basementEntrance, F0bathroom, F0diningRoom, F0downStairs, F0entrance, F0hallway2, F0hallway3, F0hallway8, F0hallway9, F0livingRoom, F1bedroom, F1hallway2, F1hallway3, F1hallway4, F1hallway8, F1parentsRoom6, F1restrooms7, F1siblingRoom5
 
+import libs.inventory.inventory as inventory
 
 #libs setup
 
@@ -54,10 +55,7 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
                 #    i = 0
                 #    print("Items in the room:\n1 - {}".format(i+1,item))#µ change spacing?
                 #    i += 1
-                if F1bedroom.objects != None:
-                    print("Items in the room:\n1 - {}".format(F1bedroom.objects))
-                else:
-                    print("There are no objects in the room.\n")
+                print("There are no objects in the room.\n")
             if argPlayerRoom == 2:
                 #for item in rooms.F1hallway2.objects:
                 #    i = 0
@@ -93,13 +91,19 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
                 #    i = 0
                 #    print("Items in the room:\n1 - {}".format(i+1,item))
                 #    i += 1
-                print("There are no objects in the room.\n")
+                if F1restrooms7.objects != None:
+                    print("Items in the room:\n1 - {}".format(F1restrooms7.objects))
+                else:
+                    print("There are no objects in the room.\n")
+
             if argPlayerRoom == 8:
                 #for item in rooms.F1hallway8.objects:
                 #    i = 0
                 #    print("Items in the room:\n1 - {}".format(i+1,item))
                 #    i += 1
                 print("There are no objects in the room.\n")
+
+            #if argPlayerRoom != 1 or argPlayerRoom != 2 or argPlayerRoom != 3 or argPlayerRoom != 4 or argPlayerRoom != 5 or argPlayerRoom != 6 or
 
         if argPlayerFloor == 0:
             if argPlayerRoom == 1:
@@ -137,7 +141,7 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
             #        i = 0
             #        print("Items in the room:\n1 - {}".format(i+1,item))
             #        i += 1
-                print("There are no objects in the room.\n")
+                print("There are no objects in the room.\n")#!HEREEEEEEEEEEEEEEE
             if argPlayerRoom == 7:
                 #for item in rooms.entrance.objects:
                 #    i = 0
