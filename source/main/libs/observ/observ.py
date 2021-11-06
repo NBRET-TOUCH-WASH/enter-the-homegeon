@@ -129,7 +129,10 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
                 #    i = 0
                 #    print("Items in the room:\n1 - {}".format(i+1,item))
                 #    i += 1
-                print("There are no objects in the room.\n")
+                if F0bathroom.objects != None:
+                    print("Items in the room:\n1 - {}".format(F0bathroom.objects))
+                else:
+                    print("There are no objects in the room.\n")
             #if argPlayerRoom == 5:
             #    for item in rooms.livingRoom.objects:
             #        i = 0
@@ -177,26 +180,29 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
                     i += 1
                 print("")
             if argPlayerRoom == 2:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F1hallway2.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F1hallway2.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 3:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F1hallway3.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F1hallway3.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 4:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F1hallway4.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F1hallway4.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 5:
                 print("\nActions available in this room:")
                 i = 0
@@ -205,12 +211,13 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
                     i += 1
                 print("")
             if argPlayerRoom == 6:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F1parentsRoom6.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F1parentsRoom6.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 7:
                 print("\nActions available in this room:")
                 i = 0
@@ -219,21 +226,23 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
                     i += 1
                 print("")
             if argPlayerRoom == 8:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F1hallway8.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F1hallway8.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
 
         if argPlayerFloor == 0:
             if argPlayerRoom == 1:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F0downStairs.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F0downStairs.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 2:
                 print("\nActions available in this room:")
                 i = 0
@@ -242,12 +251,13 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
                     i += 1
                 print("")
             if argPlayerRoom == 3:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F0hallway3.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F0hallway3.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 4:
                 print("\nActions available in this room:")
                 i = 0
@@ -256,12 +266,13 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
                     i += 1
                 print("")
             if argPlayerRoom == 5:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F0livingRoom.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F0livingRoom.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 6:
                 print("\nActions available in this room:")
                 i = 0
@@ -270,33 +281,37 @@ def look_around(argUserChoice, argPlayerRoom, argPlayerFloor):
                     i += 1
                 print("")
             if argPlayerRoom == 7:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F0entrance.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F0entrance.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 8:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F0hallway8.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F0hallway8.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 9:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F0hallway9.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F0hallway9.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
             if argPlayerRoom == 10:
-                print("\nActions available in this room:")
-                i = 0
-                for action in rooms.F0basementEntrance.actions:
-                    print("{} - {}".format(i+1,action))
-                    i += 1
-                print("")
+                #print("\nActions available in this room:")
+                #i = 0
+                #for action in rooms.F0basementEntrance.actions:
+                #    print("{} - {}".format(i+1,action))
+                #    i += 1
+                #print("")
+                print("There are no actions available in the room.\n")
 
     return argUserChoice
 

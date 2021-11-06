@@ -53,13 +53,15 @@ def get_object(argPlayerRoom,argPlayerFloor):
         hasTakenObject = input("\nTake the object? (y/n)\n> ")
 
         if (hasTakenObject == "y" or hasTakenObject == "Y") and (argPlayerRoom == 7 and argPlayerFloor == 1):
+            print("You take the Pitch-Black Key.\n")
             return "HASBASEMENTKEY"
         elif hasTakenObject == "n" or hasTakenObject == "N":
             return None
         else:
             pass
 
-        if (hasTakenObject == "y" or hasTakenObject == "Y") and (argPlayerRoom == 6 and argPlayerFloor == 0):
+        if (hasTakenObject == "y" or hasTakenObject == "Y") and (argPlayerRoom == 4 and argPlayerFloor == 0):
+            print("You take the Entrance Key.\n")
             return "HASENTRANCEKEY"
         elif hasTakenObject == "n" or hasTakenObject == "N":
             return None

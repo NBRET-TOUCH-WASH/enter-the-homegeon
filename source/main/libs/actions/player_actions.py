@@ -48,6 +48,8 @@ def choose_action(argUserChoice,argUserRoom,argUserFloor):
         if argUserRoom == 1:
             if argUserChoice == 1:
                 return f1actions.bedroom_jump_from_window()
+            else:
+                print("\nInvalid Action Choice.\n")
         if argUserRoom == 2:
             pass
         if argUserRoom == 3:
@@ -57,6 +59,8 @@ def choose_action(argUserChoice,argUserRoom,argUserFloor):
         if argUserRoom == 5:
             if argUserChoice == 1:
                 return f1actions.sibling_change_clothes()
+            else:
+                print("\nInvalid Action Choice.\n")
         if argUserRoom == 6:
             pass
         if argUserRoom == 7:
@@ -64,6 +68,10 @@ def choose_action(argUserChoice,argUserRoom,argUserFloor):
                 return f1actions.restrooms_flush()
             if argUserChoice == 2:
                 return f1actions.restrooms_use()
+            if argUserChoice == 3:
+                return f1actions.restrooms_drink()
+            else:
+                print("\nInvalid Action Choice.\n")
         if argUserRoom == 8:
             pass
 
@@ -73,6 +81,8 @@ def choose_action(argUserChoice,argUserRoom,argUserFloor):
         if argUserRoom == 2:
             if argUserChoice == 1:
                 return f0actions.hallway2_observe_painting()
+            else:
+                print("\nInvalid Action Choice.\n")
         if argUserRoom == 3:
             pass
         if argUserRoom == 4:
@@ -82,11 +92,15 @@ def choose_action(argUserChoice,argUserRoom,argUserFloor):
                 return f0actions.bathroom_wash_hands()
             if argUserChoice == 3:
                 return f0actions.bathroom_pull_curtain()
+            else:
+                print("\nInvalid Action Choice.\n")
         if argUserRoom == 5:
             pass
         if argUserRoom == 6:
             if argUserChoice == 1:
                 return f0actions.dining_sit()
+            else:
+                print("\nInvalid Action Choice.\n")
         if argUserRoom == 7:
             pass
         if argUserRoom == 8:

@@ -89,7 +89,7 @@ def hallway2_observe_painting():
     print("wow...\n")
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
 
 
@@ -160,7 +160,7 @@ def bathroom_wash_hands():
     print("All clean! :D\n")
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
 def bathroom_pull_curtain():
     print("\nYou get close to the shower curtain...\n")
@@ -207,7 +207,7 @@ def bathroom_pull_curtain():
     print("You see a small squeaky duck in the shower.\nYou feel relieved.\n")
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
 #[5]
 
@@ -228,7 +228,7 @@ def dining_sit():
     print("Your butt suddenly feels better.\n")
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
 #[7]
 

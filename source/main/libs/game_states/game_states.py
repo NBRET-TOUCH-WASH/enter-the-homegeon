@@ -13,7 +13,7 @@ notes:
             & Overwatch, target one sterilized.
 
     µ WHYNOT:
-        µ make a floor list with room class instances, use index with movement()?
+        µ Overwatch reports possible hostiles inbound.
 
     ! IMPORTANT:
         ! Roger that. Waiting for contact. Over.
@@ -21,7 +21,7 @@ notes:
     $ LOGS:
         $ 28/10/2021
             $ 01:54AM
-                $ don't really know where im going with this one
+                $ Ready weapons, stay alert.
 """
 
 
@@ -47,15 +47,20 @@ import libs.display.display as display
 def game_over():
     display.clearConsole()
     print("""
-   ___   _   __  __ ___    _____   _____ ___ 
-  / __| /_\ |  \/  | __|  / _ \ \ / / __| _ \\
- | (_ |/ _ \| |\/| | _|  | (_) \ V /| _||   /
-  \___/_/ \_\_|  |_|___|  \___/ \_/ |___|_|_\\\n""")
+  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███   ▐██▌ 
+ ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒ ▐██▌ 
+▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒ ▐██▌ 
+░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄   ▓██▒ 
+░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒ ▒▄▄  
+ ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░ ░▀▀▒ 
+  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░ ░  ░ 
+░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒       ░░     ░     ░░   ░     ░ 
+      ░       ░  ░       ░      ░  ░       ░ ░        ░     ░  ░   ░      ░    \n""")
     time.sleep(2.0)
     print("\" It's a sad thing that your adventures have ended here!! \"\n\t- Shadowgate (NES), 1989\n")
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
 
 #script

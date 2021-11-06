@@ -30,6 +30,7 @@ notes:
 
 
 #libraries/modules
+import time
 
 
 #libs setup
@@ -121,13 +122,21 @@ def movement(direction, argPlayerRoom, argPlayerFloor):
                 return 2
             if argPlayerRoom == 2:
                 return 3
-            if argPlayerRoom == 3 or argPlayerRoom == 4 or argPlayerRoom == 7 or argPlayerRoom == 8:
+            if argPlayerRoom == 3 or argPlayerRoom == 4 or argPlayerRoom == 8:
                 print("Invalid movement.\nTry again\n")
                 return argPlayerRoom
             if argPlayerRoom == 5:
                 return 7
             if argPlayerRoom == 6:
                 return 5
+            if argPlayerRoom == 7:
+                if canOpenEntrance == True:
+                    print("\nYou unlock the front door.\n")
+                    return "GOTOOUT"
+                else:
+                    print("\nThe door is locked.\n")
+                    time.sleep(2.0)
+                    return 7
             if argPlayerRoom == 9:
                 return 8
             if argPlayerRoom == 10:
@@ -145,9 +154,12 @@ def movement(direction, argPlayerRoom, argPlayerFloor):
                 return 8
             if argPlayerRoom == 10:
                 if canOpenBasement == True:
+                    print("\nYou unlock the basement door.\n")
                     return "GOTOFDASH1"
-                print("WIP\n")
-                return 0
+                else:
+                    print("\nThe door is locked.\n")
+                    time.sleep(2.0)
+                    return 10
 
         if direction == "w":
             if argPlayerRoom == 1 or argPlayerRoom == 2 or argPlayerRoom == 3 or argPlayerRoom == 6 or argPlayerRoom == 7 or argPlayerRoom == 9 or argPlayerRoom == 10:
@@ -168,3 +180,4 @@ def movement(direction, argPlayerRoom, argPlayerFloor):
 
 #script
 canOpenBasement = False
+canOpenEntrance = False

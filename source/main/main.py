@@ -59,7 +59,7 @@ notes:
 
 
 #libraries/modules
-#import time
+import time
 import sys
 
 
@@ -79,6 +79,8 @@ import libs.movement.move as move
 import libs.observ.observ as observ
 
 import libs.inventory.inventory as inventory
+import libs.game_states.endings.true_ending as ending
+import libs.game_states.endings.ending as reg_ending
 
 
 #libs setup
@@ -106,9 +108,9 @@ X - WIP
 """
 
 
-newGameLaunched = True
 
 userActionChoiceLoop = True
+userChosenActionLoop = True
 
 playerFloor = 1#?1 = upper floor ; 0 = ground floor ; -1 = basement ; (...)
 playerRoom = 1
@@ -122,6 +124,7 @@ while True:
     userTitleChoice = int(input("{}{}> ".format(title_screen.titleTxt,title_screen.titleOptions)))
 
     if userTitleChoice == 1:
+        newGameLaunched = True
         while newGameLaunched == True:
             display.clearConsole()
 
@@ -153,9 +156,19 @@ while True:
                 elif playerRoom == "GOTOF0":
                     playerRoom = 1
                     playerFloor = 0
+                elif playerRoom == "GOTOOUT":
+                    playerRoom = 1
+                    playerFloor = None
+                    time.sleep(2.0)
+                    print("As you open the door, a meteorite hits you in the face blowing up both your house and your face.\n")
+                    time.sleep(4.0)
+                    reg_ending.ending()
+                    newGameLaunched = False
                 elif playerRoom == "GOTOFDASH1":
                     playerRoom = 1
                     playerFloor = -1
+                    ending.true_ending()
+                    newGameLaunched = False
 
             elif actionUserChoice == 2:
                 try:
@@ -164,13 +177,27 @@ while True:
                     continue
 
                 if actionMenuChoice == 1:
-                    objectTaken = inventory.get_object(playerRoom,playerFloor)
+                    if (playerRoom == 7 and playerFloor == 1) or (playerRoom == 4 and playerFloor == 0):
+                        objectTaken = inventory.get_object(playerRoom,playerFloor)
+                    else:
+                        objectTaken = None
                     if objectTaken == "HASBASEMENTKEY":
                         move.canOpenBasement = True
                     elif objectTaken == "HASENTRANCEKEY":
-                        hasEntranceKey = True
+                        move.canOpenEntrance = True
+                    elif objectTaken == None:
+                        pass
                 elif actionMenuChoice == 2:
-                    playerChosenAction = player_actions.choose_action(int(input("Select an available action:\n> ")),playerRoom,playerFloor)
+                    if (playerRoom == 1 and playerFloor == 1) or (playerRoom == 5 and playerFloor == 1) or (playerRoom == 7 and playerFloor == 1) or (playerRoom == 2 and playerFloor == 0) or (playerRoom == 4 and playerFloor == 0) or (playerRoom == 6 and playerFloor == 0):
+                        while userChosenActionLoop == True:
+                            try:
+                                playerChosenAction = player_actions.choose_action(int(input("Select an available action:\n> ")),playerRoom,playerFloor)
+                                break
+                            except:
+                                print("\nInvalid Action Choice.\n")
+                                continue
+                    else:
+                        playerChosenAction = None
                     if playerChosenAction == "PLAYERISDEAD":
                         game_states.game_over()
                         newGameLaunched = False
@@ -188,8 +215,3 @@ while True:
 
     elif userTitleChoice == 3:
         sys.exit(0)
-
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-#! WRITE THE ABOUT SECTION AFTER COMPLETING THE GAME
-#! ADD SPOOPY UNUSED FILE
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

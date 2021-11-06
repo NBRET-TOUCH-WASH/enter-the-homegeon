@@ -52,7 +52,7 @@ def bedroom_jump_from_window():
     print("You slowly bleed out, your kneecaps and femurs protruding through your legs.\n")
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
     return "PLAYERISDEAD"
 
@@ -74,11 +74,11 @@ def sibling_change_clothes():
     time.sleep(1.0)
     print(""" ☺
 /T\\\t<- You
- ⋀
+ /\\
 """)
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
 #[6]
 
@@ -89,7 +89,7 @@ def restrooms_flush():
     print("Great.\n")
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
 def restrooms_use():
     print("\n1 - Small \"need\"\n2 - Big \"need\"\n")
@@ -100,12 +100,12 @@ def restrooms_use():
         time.sleep(1.0)
         print("Not much more to that.\n")
     elif restroomUseChoice == 2:
-        print("\nYou use the toilet.")
+        print("\nYou REALLY USE the toilet.")
         time.sleep(1.0)
-        print("Not much more to that.\n")
+        print("Nothing more to that.\n")
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
 def restrooms_drink():
     print("\nYou drink the\nh o l y   b e v e r a g e . . . \n")
@@ -113,7 +113,7 @@ def restrooms_drink():
     print("It tastes like [REDACTED].\n")
 
     time.sleep(1.5)
-    input("(press any key to continue...) > ")
+    #input("(press any key to continue...) > ")
 
 #[8]
 
