@@ -1,6 +1,13 @@
 # AdventureGame ; "Enter the HomeGeon"
 Repository for the adventure game NSI mini-project
 
+---
+
+&nbsp;
+### NOTE:
+
+**THE HTML PORTION IN THE 'Languages' SECTION ON THE RIGHT IS BECAUSE OF NOTES.**
+
 <!--
        _________________________
      /                           \
